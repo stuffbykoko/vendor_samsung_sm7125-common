@@ -219,14 +219,7 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOmxAacDec \
-    libOmxAlacDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
     libOmxBlackBar \
-    libOmxEvrcDec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libOpenCL \
     libQSEEComAPI \
     libSecureUILib \
@@ -379,7 +372,6 @@ PRODUCT_PACKAGES += \
     libssc \
     libssc_default_listener \
     libssd \
-    libstagefright_soft_qtiflacdec \
     libswregistrationalgo \
     libsynergy_loc_api \
     libsysmon_cdsp_skel \
@@ -437,8 +429,8 @@ PRODUCT_PACKAGES += \
     com.samsung.node.uniplugin_preview \
     libMOTION \
     audio.primary.atoll \
-    libOmxDsdDec \
     lib_SamsungRec_07010 \
+    lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     liba2dpoffload_vendor \
@@ -450,7 +442,6 @@ PRODUCT_PACKAGES += \
     libcirrusspkrprot_vendor \
     libcomprcapture_vendor \
     libdrc \
-    libdsd2pcm \
     libexthwplugin_vendor \
     libhdmiedid_vendor \
     libhdmipassthru_vendor \
@@ -468,11 +459,21 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     libasphere \
+    libaudioeffectoffload \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libldnhncr \
+    libmyspace \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
+    libreverbwrapper \
     libshoebox \
+    libswdap \
     libswspatializer \
+    libvisualizer \
     spatializer-aidl-V1-cpp \
     com.qti.eeprom.sec2qcconversion \
     com.samsung.node.smooth_transition \
