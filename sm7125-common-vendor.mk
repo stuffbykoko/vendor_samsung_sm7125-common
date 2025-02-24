@@ -341,7 +341,6 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
-    libqsap_sdk \
     libqseed3 \
     libqsocket \
     libqti-util \
@@ -379,6 +378,7 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
+    libtinyxml \
     libtinyxml2_1 \
     libtrustedapploader \
     libuniplugin \

@@ -5,11 +5,12 @@
 soong_namespace {
     imports: [
         "device/samsung/sm7125-common",
-        "hardware/qcom-caf/sm8150",
-        "hardware/qcom-caf/wlan",
+        "hardware/qcom/display",
+        "hardware/qcom/gps",
+        "hardware/qcom/wlan",
         "hardware/samsung",
         "vendor/qcom/opensource/dataservices",
-        "vendor/qcom/opensource/display",
+        "vendor/qcom/common/vendor/display",
     ],
 }
 
@@ -8291,55 +8292,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqsap_sdk",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libqsap_sdk.so",
-            ],
-            shared_libs: [
-                "libnetutils",
-                "libutils",
-                "libbinder",
-                "libcutils",
-                "libhardware_legacy",
-                "libnl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqsap_sdk.so",
-            ],
-            shared_libs: [
-                "libnetutils",
-                "libutils",
-                "libbinder",
-                "libcutils",
-                "libhardware_legacy",
-                "libnl",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqseed3",
     owner: "samsung",
     strip: {
@@ -9914,6 +9866,41 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libc++",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtinyxml",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtinyxml.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtinyxml.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
                 "libm",
                 "libdl",
             ],
@@ -14555,26 +14542,10 @@ cc_prebuilt_binary {
             srcs: [
                 "proprietary/vendor/bin/adpl",
             ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libdiag",
-                "libdsutils",
-                "librmnetctl",
-                "libqmi_cci",
-                "libqmiservices",
-                "libnetutils",
-                "libcutils",
-                "libqmi_client_qmux",
-                "libqmi_encdec",
-                "libqcmaputils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     strip: {
         none: true,
     },
