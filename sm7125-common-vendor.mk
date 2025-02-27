@@ -431,7 +431,6 @@ PRODUCT_PACKAGES += \
     libMOTION \
     audio.primary.atoll \
     lib_SamsungRec_07010 \
-    lib_SoundAlive_3DPosition_ver202 \
     lib_SoundAlive_SRC384_ver320 \
     lib_soundaliveresampler \
     liba2dpoffload_vendor \
@@ -461,21 +460,11 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     libasphere \
-    libaudioeffectoffload \
-    libbundlewrapper \
-    libdownmix \
-    libdynproc \
-    libeffectproxy \
-    libldnhncr \
-    libmyspace \
     libqcbassboost \
     libqcreverb \
     libqcvirt \
-    libreverbwrapper \
     libshoebox \
-    libswdap \
     libswspatializer \
-    libvisualizer \
     spatializer-aidl-V1-cpp \
     com.qti.eeprom.sec2qcconversion \
     com.samsung.node.smooth_transition \
