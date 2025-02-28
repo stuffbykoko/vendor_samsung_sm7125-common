@@ -12647,6 +12647,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmedia_ecoservice",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libmedia_ecoservice.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libcodec2_hidl@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libprofileparamstorage",
     owner: "samsung",
     strip: {
@@ -12692,7 +12721,9 @@ cc_prebuilt_library_shared {
                 "libcodec2_vndk",
                 "libqdMetaData",
                 "libhidlbase",
-                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libbinder",
+                "libmedia_ecoservice",
                 "libc++",
                 "libc",
                 "libm",
@@ -15087,6 +15118,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libvndksupport",
                 "libcodec2_hidl@1.0",
+                "libmedia_ecoservice",
                 "libc++",
                 "libc",
                 "libm",

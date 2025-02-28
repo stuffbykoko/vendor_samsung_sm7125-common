@@ -446,6 +446,7 @@ PRODUCT_PACKAGES += \
     libhdmiedid_vendor \
     libhdmipassthru_vendor \
     libhfp_vendor \
+    libmedia_ecoservice \
     libprofileparamstorage \
     libqcodec2 \
     libqtigef \
