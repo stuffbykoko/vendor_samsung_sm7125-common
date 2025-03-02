@@ -196,12 +196,6 @@ PRODUCT_PACKAGES += \
     com.wrapper.stats.pdlib \
     libdepthmapwrapper \
     com.qualcomm.qti.ant@1.0 \
-    eglSubDriverAndroid \
-    libEGL_adreno \
-    libGLESv1_CM_adreno \
-    libGLESv2_adreno \
-    libq3dtools_adreno \
-    libq3dtools_esx \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gnss@2.1-impl-qti \
     audio.bluetooth_qti.default \
@@ -215,22 +209,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.samsung.hardware.bluetooth.a2dp@1.0-impl \
     vendor.samsung.hardware.gnss@2.0-impl-sec \
-    vulkan.adreno \
-    libC2D2 \
-    libCB \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libOpenCL \
     libQSEEComAPI \
     libSecureUILib \
     libStDrvInt \
-    libVkLayer_q3dtools \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
     libadiertac \
-    libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
     libaudcal \
@@ -240,7 +228,6 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     libbtnv \
     libc++_shared \
-    libc2d30_bltlib \
     libcacertclient \
     libcamera_nn_stub \
     libcamxfdalgov7 \
@@ -264,7 +251,6 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdiagjni \
     libdisp-aba \
-    libdisplayqos \
     libdpps \
     libdrmfs \
     libdrmtime \
@@ -284,9 +270,6 @@ PRODUCT_PACKAGES += \
     libgnss \
     libgnsspps \
     libgps.utils \
-    libgpudataproducer \
-    libgsl \
-    libhdr_tm \
     libhta \
     libhta_hexagon_runtime \
     libidl \
@@ -294,8 +277,6 @@ PRODUCT_PACKAGES += \
     libizat_core \
     libjnihelper \
     liblbs_core \
-    libllvm-glnext \
-    libllvm-qcom \
     libloc_api_v02 \
     libloc_core \
     libloc_socket \
@@ -307,7 +288,6 @@ PRODUCT_PACKAGES += \
     libmdsprpc \
     libminkdescriptor \
     libminksocket \
-    libmmosal \
     libmpbase \
     libmulawdec \
     libnpu \
@@ -315,8 +295,6 @@ PRODUCT_PACKAGES += \
     libops \
     libpdmapper \
     libpdnotifier \
-    libperfconfig \
-    libperfgluelayer \
     libperipheral_client \
     libprotobuf-cpp-full-3.9.1 \
     libprotobuf-cpp-lite-3.9.1 \
@@ -341,21 +319,13 @@ PRODUCT_PACKAGES += \
     libqmi_legacy \
     libqmiservices \
     libqrtr \
-    libqseed3 \
     libqsocket \
-    libqti-util \
     libremosaic_daemon \
     librpmb \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
     libscveObjectSegmentation_stub \
-    libsdedrm \
-    libsdm-color \
-    libsdm-colormgr-algo \
-    libsdm-diag \
-    libsdm-disp-vndapis \
-    libsdmextension \
     libsdsprpc \
     libsecnativefeature \
     libsecureui \
@@ -379,7 +349,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libtinyxml \
-    libtinyxml2_1 \
     libtrustedapploader \
     libuniplugin \
     libxml \
@@ -389,13 +358,6 @@ PRODUCT_PACKAGES += \
     unihal_main@2.15 \
     unihal_uniplugin@1.0 \
     unnhal-acc-hta \
-    vendor.display.color@1.0 \
-    vendor.display.color@1.1 \
-    vendor.display.color@1.2 \
-    vendor.display.color@1.3 \
-    vendor.display.color@1.4 \
-    vendor.display.color@1.5 \
-    vendor.display.postproc@1.0 \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
     vendor.qti.gnss@1.2 \
@@ -478,8 +440,6 @@ PRODUCT_PACKAGES += \
     libhexagon_nn_stub \
     libhypervintf \
     libkeymaster_helper \
-    liblearningmodule \
-    libmeters \
     libnanopb \
     libnlnetmgr \
     libreffeature \
@@ -561,11 +521,3 @@ PRODUCT_PACKAGES += \
     thermal-engine \
     time_daemon \
     xtra-daemon
-
-PRODUCT_PACKAGES += \
-    vendor_lib_libEGL_adreno_so \
-    vendor_lib_libGLESv2_adreno_so \
-    vendor_lib_libq3dtools_adreno_so \
-    vendor_lib64_libEGL_adreno_so \
-    vendor_lib64_libGLESv2_adreno_so \
-    vendor_lib64_libq3dtools_adreno_so
