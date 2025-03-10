@@ -486,7 +486,7 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libril_sem \
     libsec-ril \
-    libsecril-client_vendor \
+    libsecril-client \
     libskeymaster4device \
     libsnpe_dsp_domains_v2 \
     libsnpe_wrapper \
