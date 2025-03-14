@@ -467,11 +467,7 @@ PRODUCT_PACKAGES += \
     libshoebox \
     libswspatializer \
     spatializer-aidl-V1-cpp \
-    com.qti.eeprom.sec2qcconversion \
-    com.samsung.node.smooth_transition \
-    com.wrapper.stats.aec \
     gatekeeper.mdfpp \
-    libSNPE \
     libSemDataProps \
     libSemTelephonyProps \
     libengmode_client \
@@ -488,8 +484,6 @@ PRODUCT_PACKAGES += \
     libsec-ril \
     libsecril-client \
     libskeymaster4device \
-    libsnpe_dsp_domains_v2 \
-    libsnpe_wrapper \
     libvkmanager_vendor \
     unnhal-acc-adreno \
     unnhal-acc-common \
