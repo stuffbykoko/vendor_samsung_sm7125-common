@@ -325,6 +325,7 @@ PRODUCT_PACKAGES += \
     libsystem_health_mon \
     libthermalclient \
     libtime_genoff \
+    libtinyxml \
     libtinyxml2_1 \
     libtrustedapploader \
     libuniplugin \
