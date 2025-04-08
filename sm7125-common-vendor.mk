@@ -139,62 +139,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm7125-common/proprietary/vendor/lib/camera/com.samsung.tuned.lsi_s5kgd2.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.lsi_s5kgd2.bin \
     vendor/samsung/sm7125-common/proprietary/vendor/lib/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.samsung.tuned.sony_imx616.bin \
     vendor/samsung/sm7125-common/proprietary/vendor/lib/camera/f_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/f_dual_calibration.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/w_dual_calibration.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.0_1_lsi_s5kgw1p.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_0_sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_0_sony_imx616.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5kgd2_otp.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_0_lsi_s5k3l6.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_0_lsi_s5k3l6.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.2_1_hynix_hi1336.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_0_sony_imx616_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_0_sony_imx616_full.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full_otp.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.sensormodule.8_1_lsi_s5kgd2_full_otp.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_gc5035_macro.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.tuned.lsi_s5kgd2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.lsi_s5kgd2.bin \
-    vendor/samsung/sm7125-common/proprietary/vendor/lib64/camera/com.samsung.tuned.sony_imx616.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.samsung.tuned.sony_imx616.bin
+    vendor/samsung/sm7125-common/proprietary/vendor/lib/camera/w_dual_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/w_dual_calibration.bin
 
 PRODUCT_PACKAGES += \
     btaudio_offload_if \
-    com.qti.eeprom.n24s64b_imx616 \
-    com.samsung.sensor.gc5035_macro \
-    com.samsung.sensor.hi1336 \
-    com.samsung.sensor.imx616 \
-    com.samsung.sensor.imx682 \
-    com.samsung.sensor.s5k3l6 \
-    com.samsung.sensor.s5kgd2 \
-    com.samsung.sensor.s5kgw1p \
-    com.qti.camx.chiiqutils \
-    com.qti.eisv2 \
-    com.qti.eisv3 \
-    com.qti.node.depth \
-    com.qti.node.dummyrtb \
-    com.qti.node.dummysat \
-    com.qti.node.eisv2 \
-    com.qti.node.eisv3 \
-    com.qti.node.fcv \
-    com.qti.node.gpu \
-    com.qti.node.memcpy \
-    com.qti.node.stich \
-    com.qti.node.swregistration \
-    com.qti.stats.afd \
-    com.qti.stats.asd \
-    com.qti.stats.hafoverride \
-    com.qti.stats.pdlibsony \
-    com.qti.stats.pdlibwrapper \
-    com.qtistatic.stats.aec \
-    com.qtistatic.stats.af \
-    com.qtistatic.stats.awb \
-    com.qtistatic.stats.pdlib \
-    com.samsung.node.bayercheck \
-    com.samsung.node.bayerfuse \
-    com.samsung.node.capture_bokeh \
-    com.samsung.node.capture_fusion \
-    com.samsung.node.realtimebokeh \
-    com.samsung.node.remosaic \
-    com.wrapper.stats.af \
-    com.wrapper.stats.awb \
-    com.wrapper.stats.pdlib \
-    libdepthmapwrapper \
     com.qualcomm.qti.ant@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -419,14 +367,54 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.gnss@2.0 \
+    com.qti.eeprom.n24s64b_imx616 \
+    com.samsung.sensor.gc5035_macro \
+    com.samsung.sensor.hi1336 \
+    com.samsung.sensor.imx616 \
+    com.samsung.sensor.imx682 \
+    com.samsung.sensor.s5k3l6 \
+    com.samsung.sensor.s5kgd2 \
+    com.samsung.sensor.s5kgw1p \
+    com.qti.camx.chiiqutils \
+    com.qti.eisv2 \
+    com.qti.eisv3 \
+    com.qti.node.depth \
+    com.qti.node.dummyrtb \
+    com.qti.node.dummysat \
+    com.qti.node.eisv2 \
+    com.qti.node.eisv3 \
+    com.qti.node.fcv \
+    com.qti.node.gpu \
+    com.qti.node.memcpy \
+    com.qti.node.stich \
+    com.qti.node.swregistration \
     com.qti.stats.aec \
     com.qti.stats.af \
+    com.qti.stats.afd \
+    com.qti.stats.asd \
     com.qti.stats.awb \
     com.qti.stats.haf \
+    com.qti.stats.hafoverride \
     com.qti.stats.pdlib \
+    com.qti.stats.pdlibsony \
+    com.qti.stats.pdlibwrapper \
+    com.qtistatic.stats.aec \
+    com.qtistatic.stats.af \
+    com.qtistatic.stats.awb \
+    com.qtistatic.stats.pdlib \
+    com.samsung.node.bayercheck \
+    com.samsung.node.bayerfuse \
+    com.samsung.node.capture_bokeh \
+    com.samsung.node.capture_fusion \
+    com.samsung.node.realtimebokeh \
+    com.samsung.node.remosaic \
     com.samsung.node.uniplugin_capture \
     com.samsung.node.uniplugin_preview \
+    com.wrapper.stats.af \
+    com.wrapper.stats.awb \
+    com.wrapper.stats.pdlib \
     libMOTION \
+    libdepthmapwrapper \
     audio.primary.atoll \
     lib_SamsungRec_07010 \
     lib_SoundAlive_SRC384_ver320 \
